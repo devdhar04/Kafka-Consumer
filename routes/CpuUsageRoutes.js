@@ -5,8 +5,9 @@ const CPUData = require('../schema/Schema');
 
 router.post('/cpu-data', async (req, res) => {
   try {
-    const { clientId, cpuUsage } = req.body;
-    const cpuData = new CPUData({ clientId, cpuUsage });
+    console.error('Request body:', req.body);
+    const { clientId, cpuUsage , groupId} = req.body;
+    const cpuData = new CPUData({ clientId, cpuUsage ,groupId});
     await cpuData.save();
     res.status(201).send('CPU data received successfully.');
   } catch (error) {

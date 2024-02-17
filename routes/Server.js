@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const cpuRoutes = require('./CpuUsageRoutes');
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3003;
 const MONGODB_URI = 'mongodb://0.0.0.0:27017/cpu-monitor';
 
 app.use(bodyParser.json());
