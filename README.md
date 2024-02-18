@@ -42,6 +42,7 @@ I have choose Java for Develping the Client side with Apache Kafka.
 - **Fault Tolerance**: Kafka provides built-in fault tolerance through data replication and partitioning. Producers can write data to Kafka topics with confidence, knowing that data is replicated across multiple brokers for durability and availability. In case of broker failures, Kafka can automatically recover and continue processing data without data loss.
 - **Reliability**: Kafka guarantees message delivery semantics, ensuring that messages written by producers are reliably delivered to consumers. 
 <img width="680" alt="Screenshot 2024-02-17 at 23 25 41" src="https://github.com/devdhar04/Hive-Assignment-Server/assets/27695782/f8b23394-57f3-4f63-97f8-2bf190b9321b">
+- **Binary Protocol**: Apache Kafka uses Binary protocols, that consume less bandwidth, are more efficiently parsed and are less error-prone than the textual protocols used by HTTP/1.1
 
  
  
