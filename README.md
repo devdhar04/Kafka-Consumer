@@ -44,7 +44,8 @@ I have choose Java for Develping the Client side with Apache Kafka.
 - **Binary Protocol**: Apache Kafka uses Binary protocols, that consume less bandwidth, are more efficiently parsed and are less error-prone than the textual protocols used by HTTP/1.1
 <img width="680" alt="Screenshot 2024-02-17 at 23 25 41" src="https://github.com/devdhar04/Hive-Assignment-Server/assets/27695782/f8b23394-57f3-4f63-97f8-2bf190b9321b">
 
-
+I have Developed Clinet in Java that will collect cpuUsage after every 6 Seconds and send to Nodejs server using apache Kafka .
+Nodejs server save this data in MongoDb Database . Apache kafka will make sure there will be no loss of data .
 
  
 ## Client Component
