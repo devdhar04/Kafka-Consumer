@@ -1,7 +1,7 @@
 
  # Hive Assignment
 
-A short description of what the project does.
+Client and Server High level Architecture Document .
 
 ## Table of Contents
 
@@ -35,7 +35,7 @@ CPU usage.
 
 ## Architecture Overview
 
-I have choose Java for Develping the Client side with Apache Kafka.
+I have choosen Java for Develping the Client side with Apache Kafka.
 ### Why I have choose kafka
 - **Scalability**: Kafka is designed to scale horizontally, allowing you to handle large volumes of data and high throughput. Producers can write data to Kafka topics distributed across multiple brokers, enabling linear scalability as you add more hardware.
 - **High Throughput**: Kafka is optimized for high throughput and low latency, making it suitable for real-time data streaming applications. Producers can efficiently write large volumes of data to Kafka topics, and consumers can process data in parallel to achieve low-latency processing.
@@ -44,7 +44,7 @@ I have choose Java for Develping the Client side with Apache Kafka.
 - **Binary Protocol**: Apache Kafka uses Binary protocols, that consume less bandwidth, are more efficiently parsed and are less error-prone than the textual protocols used by HTTP/1.1
 <img width="680" alt="Screenshot 2024-02-17 at 23 25 41" src="https://github.com/devdhar04/Hive-Assignment-Server/assets/27695782/f8b23394-57f3-4f63-97f8-2bf190b9321b">
 
-I have Developed Clinet in Java that will collect cpuUsage after every 6 Seconds and send to Nodejs server using apache Kafka .
+I have Developed Client in Java that will collect cpuUsage after every 6 Seconds and send to Nodejs server using apache Kafka .
 Nodejs server save this data in MongoDb Database . Apache kafka will make sure there will be no loss of data .
 
  
@@ -96,7 +96,7 @@ node routes/KafkaConsumer.js
   cpuUsage: { type: Number, required: true },
 }
 ```
-I have used **clientId** as a Identifier for a particular **client** or System where as **groupId** is to identify Group of clients or an Organization .
+I have used **clientId** as an Identifier for a particular **client** or System where as **groupId** is to identify Group of clients or an Organization .
 we can you find query in mongoDb to filter the resultes on basis of thrashhold e.g
 
 ```bash
