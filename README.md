@@ -96,7 +96,17 @@ node routes/KafkaConsumer.js
   cpuUsage: { type: Number, required: true },
 }
 ```
+I have used **clientId** as a Identifier for a particular **client** or System where as **groupId** is to identify Group of clients or an Organization .
+we can you find query in mongoDb to filter the resultes on basis of thrashhold e.g
 
+```bash
+const cursor = db.collection('cpu-data').find({
+  groupId: 'groupId',
+  cpuUsage: { $gte: 30 }
+});
+```
+
+Above query can return all the data in database where clients have groupId as **groupId** and **cpuUsage** is greather than **30** .
 
 ## License
 
